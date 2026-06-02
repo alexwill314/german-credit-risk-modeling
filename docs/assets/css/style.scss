@@ -3,28 +3,67 @@
 
 @import "{{ site.theme }}";
 
+/* Header: subtle but visible blue-gray gradient */
 .page-header {
-  background-color: #f5f7fa;
-  background-image: linear-gradient(120deg, #e8ecf3, #f0f3f8);
-  color: #2c3e50;
+  background-color: #e8eef7;
+  background-image: linear-gradient(120deg, #dbe7f6, #f5f7fa);
+  color: #243447;
 }
 
 .project-name {
-  color: #2c3e50;
+  color: #243447;
 }
 
 .project-tagline {
-  color: #5a6571;
+  color: #52616f;
+  opacity: 1;
 }
 
+/* Header buttons */
 .btn {
-  background-color: #4a5568;
+  background-color: rgba(255, 255, 255, 0.55);
   background-image: none;
-  border: 1px solid #718096;
-  color: #fff;
+  border: 1px solid rgba(36, 52, 71, 0.25);
+  color: #243447;
 }
 
 .btn:hover {
-  background-color: #2d3748;
-  opacity: 0.9;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-color: #2f5f98;
+  color: #2f5f98;
+  text-decoration: none;
+}
+
+/* Links in main content: replace Cayman's green with muted blue */
+.main-content a {
+  color: #2f5f98;
+}
+
+.main-content a:hover {
+  color: #1f4168;
+}
+
+/* Headings: avoid green accent color */
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6 {
+  color: #243447;
+}
+
+/* Code blocks / inline code: keep neutral */
+.main-content code {
+  color: #374151;
+}
+
+/* Optional: horizontal rules and table borders a bit more neutral */
+.main-content hr {
+  background-color: #d8dee9;
+}
+
+.main-content table th,
+.main-content table td {
+  border-color: #d8dee9;
 }
