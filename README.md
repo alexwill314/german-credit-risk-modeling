@@ -1,5 +1,7 @@
 # German Credit Data – EDA & Regression Model
 
+[Project website](https://alexwill314.github.io/german-credit-risk-modeling/)
+
 ## Overview
 
 This project explores the **German Credit Dataset** using exploratory data analysis (EDA) to understand 

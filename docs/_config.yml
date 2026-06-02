@@ -1,0 +1,3 @@
+title: German Credit Risk Modeling
+description: Interpretable credit risk classification with WoE encoding, logistic regression and cost-sensitive threshold optimization.
+theme: jekyll-theme-cayman
