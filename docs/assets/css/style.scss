@@ -3,67 +3,130 @@
 
 @import "{{ site.theme }}";
 
-/* Header: subtle but visible blue-gray gradient */
+/* Global dark background */
+body {
+  background-color: #0d1117;
+  color: #c9d1d9;
+}
+
+/* Header: dark, subtle gradient */
 .page-header {
-  background-color: #e8eef7;
-  background-image: linear-gradient(120deg, #dbe7f6, #f5f7fa);
-  color: #243447;
+  background-color: #161b22;
+  background-image: linear-gradient(120deg, #0d1117, #1f2937);
+  color: #f0f6fc;
 }
 
+/* Header title */
 .project-name {
-  color: #243447;
+  color: #f0f6fc;
 }
 
+/* Header subtitle */
 .project-tagline {
-  color: #52616f;
+  color: #8b949e;
   opacity: 1;
 }
 
 /* Header buttons */
 .btn {
-  background-color: rgba(255, 255, 255, 0.55);
+  color: #f0f6fc;
+  background-color: rgba(240, 246, 252, 0.08);
   background-image: none;
-  border: 1px solid rgba(36, 52, 71, 0.25);
-  color: #243447;
+  border: 1px solid rgba(240, 246, 252, 0.25);
 }
 
 .btn:hover {
-  background-color: rgba(255, 255, 255, 0.85);
-  border-color: #2f5f98;
-  color: #2f5f98;
+  color: #ffffff;
+  background-color: rgba(240, 246, 252, 0.14);
+  border-color: rgba(240, 246, 252, 0.45);
   text-decoration: none;
 }
 
-/* Links in main content: replace Cayman's green with muted blue */
-.main-content a {
-  color: #2f5f98;
+/* Main content area */
+.main-content {
+  color: #c9d1d9;
+  background-color: #0d1117;
 }
 
-.main-content a:hover {
-  color: #1f4168;
-}
-
-/* Headings: avoid green accent color */
+/* Headings */
 .main-content h1,
 .main-content h2,
 .main-content h3,
 .main-content h4,
 .main-content h5,
 .main-content h6 {
-  color: #243447;
+  color: #f0f6fc;
 }
 
-/* Code blocks / inline code: keep neutral */
+/* Links: muted blue instead of Cayman green */
+.main-content a {
+  color: #58a6ff;
+}
+
+.main-content a:hover {
+  color: #79c0ff;
+}
+
+/* Paragraphs and list text */
+.main-content p,
+.main-content li {
+  color: #c9d1d9;
+}
+
+/* Blockquotes */
+.main-content blockquote {
+  color: #8b949e;
+  border-left: 0.3rem solid #30363d;
+}
+
+/* Inline code */
 .main-content code {
-  color: #374151;
+  color: #ff7b72;
+  background-color: rgba(110, 118, 129, 0.18);
 }
 
-/* Optional: horizontal rules and table borders a bit more neutral */
-.main-content hr {
-  background-color: #d8dee9;
+/* Code blocks */
+.main-content pre {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+}
+
+.main-content pre code {
+  color: #c9d1d9;
+  background-color: transparent;
+}
+
+/* Tables */
+.main-content table {
+  color: #c9d1d9;
 }
 
 .main-content table th,
 .main-content table td {
-  border-color: #d8dee9;
+  border-color: #30363d;
+}
+
+.main-content table th {
+  background-color: #161b22;
+  color: #f0f6fc;
+}
+
+.main-content table tr:nth-child(even) {
+  background-color: #161b22;
+}
+
+/* Horizontal rules */
+.main-content hr {
+  background-color: #30363d;
+}
+
+/* Footer */
+.site-footer {
+  color: #8b949e;
+  border-top: solid 1px #30363d;
+}
+
+.site-footer a,
+.site-footer-owner a {
+  color: #58a6ff;
 }

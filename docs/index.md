@@ -129,16 +129,3 @@ Run the analysis notebook:
 jupyter notebook notebooks/German_Credit_Data_Analysis.ipynb
 ```
 
-## Links
-
-- [GitHub Repository](https://github.com/alexwill314/german-credit-risk-modeling)
-- [Project Website](https://alexwill314.github.io/german-credit-risk-modeling/)
-
-### Enabling GitHub Pages
-
-To publish this site:
-
-1. Go to **Repository Settings** → **Pages**
-2. Under **Source**, select **Deploy from a branch**
-3. Choose **Branch: main** and **Folder: /docs**
-4. Click **Save** — the site will be available at `https://alexwill314.github.io/german-credit-risk-modeling/`
