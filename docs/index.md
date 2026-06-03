@@ -150,6 +150,7 @@ Logistic regression was chosen as the modeling approach because it is:
 | property       | -0.7263           | 0.1267   |
 | age_bin        | -0.6672           | 0.0988   |
 
+
 - The features used in modeling are the key drivers identified in EDA
 - All coefficients are negative, consistent with the WoE encoding direction
 
@@ -161,13 +162,12 @@ Performance is evaluated using ROC-AUC and accuracy on a hold-out test set. The 
 
 ![ROC Curve](assets/roc_curve.png)
 
-**Baseline model performance (default 0.5 threshold):**
+**Baseline model performance:**
 
 | Metric       | Value  |
 |--------------|--------|
 | ROC-AUC      | 0.7292 |
 | Gini         | 0.4583 |
-| Accuracy     | 74%    |
 
 ---
 
@@ -179,6 +179,7 @@ Instead of using the default 0.5 classification threshold, the model is tuned to
 - Selects the threshold that minimizes business risk cost
 - Demonstrates that threshold optimization can yield significant savings relative to naive accuracy-based decisions
 
+There are two kinds of decisions, leading to costs:
 - **False Negative (FN) of Default**: Approving a borrower who will default. This is extremely costly (capital loss of the loan amount).
 - **False Positive (FP) of Default**: Rejecting a borrower who would have repaid. This results in lost interest income (opportunity cost).
 
