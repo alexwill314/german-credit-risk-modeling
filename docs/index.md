@@ -2,11 +2,8 @@
 ---
 
 {% include mathjax.html %}
-
----
 layout: default
 
----
 
 An interpretable credit risk classification project using the South German Credit dataset.
 
